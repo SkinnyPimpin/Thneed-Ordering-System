@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="editOrdersPane" prefHeight="236.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditOrdersController">
+   <children>
+      <Label layoutX="109.0" layoutY="14.0" text="Edit Orders">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="144.0" text="Filled Date: ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="bCancel" layoutX="85.0" layoutY="180.0" mnemonicParsing="false" onAction="#bCancelClick" prefHeight="42.0" prefWidth="105.0" text="Cancel" />
+      <Button fx:id="bSave" layoutX="214.0" layoutY="180.0" mnemonicParsing="false" onAction="#bSaveClick" prefHeight="42.0" prefWidth="123.0" text="Save" />
+      <DatePicker fx:id="dpFilled" layoutX="179.0" layoutY="145.0" />
+      <Label fx:id="lSelectedOrder" layoutX="68.0" layoutY="56.0" text="Label" />
+   </children>
+</AnchorPane>
